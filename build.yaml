@@ -20,6 +20,6 @@
 ---
 include:
   - board: xiao_ble
-    shield: stolas_left
+    shield: stolas_left rgbled_adapter
   - board: xiao_ble
-    shield: stolas_right
+    shield: stolas_right rgbled_adapter

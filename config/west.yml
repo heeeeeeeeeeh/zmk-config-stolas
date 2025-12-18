@@ -8,12 +8,17 @@ manifest:
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
     - name: heeeeeeeeeeh
       url-base: https://github.com/heeeeeeeeeeh/
+    - name: caksoylar # <-- new entry
+      url-base: https://github.com/caksoylar
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
     - name: zmk-keyboard-stolas
       remote: heeeeeeeeeeh
+      revision: main
+    - name: zmk-rgbled-widget # <-- new entry
+      remote: caksoylar
       revision: main
   self:
     path: config
