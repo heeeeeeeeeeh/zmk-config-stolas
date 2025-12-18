@@ -6,14 +6,14 @@ manifest:
       url-base: https://github.com/zmkfirmware
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
-    - name: heeeeeeeeeeh
-      url-base: https://github.com/heeeeeeeeeeh/
+    # - name: heeeeeeeeeeh
+    #   url-base: https://github.com/heeeeeeeeeeh/
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
-    - name: zmk-keyboard-stolas
-      remote: heeeeeeeeeeh
-      revision: main
+    # - name: zmk-keyboard-stolas
+    #   remote: heeeeeeeeeeh
+    #   revision: main
   self:
     path: config
