@@ -20,8 +20,8 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: stolas_left rgbled_adapter
+    shield: stolas_left
   - board: nice_nano_v2
-    shield: stolas_right rgbled_adapter
+    shield: stolas_right
   - board: nice_nano_v2
     shield: settings_reset
