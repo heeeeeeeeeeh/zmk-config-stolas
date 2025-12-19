@@ -19,9 +19,9 @@
 #
 ---
 include:
-  - board: xiao_ble
+  - board: nice_nano_v2
     shield: stolas_left rgbled_adapter
-  - board: xiao_ble
+  - board: nice_nano_v2
     shield: stolas_right rgbled_adapter
-  - board: xiao_ble
+  - board: nice_nano_v2
     shield: settings_reset
