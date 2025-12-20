@@ -1,0 +1,16 @@
+if SHIELD_STOLAS_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Stolas"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_STOLAS_LEFT
+
+if SHIELD_STOLAS_LEFT || SHIELD_STOLAS_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_STOLAS_LEFT || SHIELD_STOLAS_RIGHT
