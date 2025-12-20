@@ -13,11 +13,50 @@
         // Edit this to define the positions and sizes of the keys, or remove it
         // if your keyboard will not support ZMK Studio.
         // https://zmk.dev/docs/development/hardware-integration/physical-layouts#optional-keys-property
-        keys  //                     w   h    x    y     rot    rx    ry
-            = <&key_physical_attrs 100 100    0    0       0     0     0>
-            , <&key_physical_attrs 100 100  100    0       0     0     0>
-            , <&key_physical_attrs 100 100    0  100       0     0     0>
-            , <&key_physical_attrs 100 100  100  100       0     0     0>
+/* ---------------- Row 0 ---------------- */
+        keys =  //                      w        h    x    y     rot    rx    ry
+                  <&key_physical_attrs  x=0.793  y=1.476  r=-10  rx=1.293  ry=1.976>
+                , <&key_physical_attrs  x=1.883  y=0.587  r=-4   rx=2.383  ry=1.087>
+                , <&key_physical_attrs  x=2.997  y=0      r=0>
+                , <&key_physical_attrs  x=3.97   y=0.482  r=0>
+                , <&key_physical_attrs  x=4.943  y=0.638  r=0>
+                , <&key_physical_attrs  x=8.602  y=0.638  r=0>
+                , <&key_physical_attrs  x=9.575  y=0.482  r=0>
+                , <&key_physical_attrs  x=10.548 y=0      r=0>
+                , <&key_physical_attrs  x=11.661 y=0.587  r=4   rx=12.161 ry=1.087>
+                , <&key_physical_attrs  x=12.752 y=1.476  r=10  rx=13.252 ry=1.976>
+>
+                /* ---------------- Row 1 ---------------- */>
+                , <&key_physical_attrs  x=0.952  y=2.433  r=-10  rx=1.452  ry=2.933>
+                , <&key_physical_attrs  x=1.948  y=1.556  r=-4   rx=2.448  ry=2.056>
+                , <&key_physical_attrs  x=2.997  y=0.971  r=0>
+                , <&key_physical_attrs  x=3.97   y=1.454  r=0>
+                , <&key_physical_attrs  x=4.943  y=1.609  r=0>
+                , <&key_physical_attrs  x=8.602  y=1.609  r=0>
+                , <&key_physical_attrs  x=9.575  y=1.454  r=0>
+                , <&key_physical_attrs  x=10.548 y=0.971  r=0>
+                , <&key_physical_attrs  x=11.597 y=1.556  r=4   rx=12.097 ry=2.056>
+                , <&key_physical_attrs  x=12.593 y=2.433  r=10  rx=13.093 ry=2.933>
+>
+                /* ---------------- Row 2 ---------------- */>
+                , <&key_physical_attrs  x=0.079  y=3.138  r=-10  rx=0.579  ry=3.638>
+                , <&key_physical_attrs  x=1.112  y=3.389  r=-10  rx=1.612  ry=3.889>
+                , <&key_physical_attrs  x=2.012  y=2.526  r=-4   rx=2.512  ry=3.026>
+                , <&key_physical_attrs  x=2.997  y=1.943  r=0>
+                , <&key_physical_attrs  x=3.97   y=2.425  r=0>
+                , <&key_physical_attrs  x=4.943  y=2.58   r=0>
+                , <&key_physical_attrs  x=8.602  y=2.58   r=0>
+                , <&key_physical_attrs  x=9.575  y=2.425  r=0>
+                , <&key_physical_attrs  x=10.548 y=1.943  r=0>
+                , <&key_physical_attrs  x=11.533 y=2.526  r=4   rx=12.033 ry=3.026>
+                , <&key_physical_attrs  x=12.433 y=3.389  r=10  rx=12.933 ry=3.889>
+                , <&key_physical_attrs  x=13.466 y=3.138  r=10  rx=13.966 ry=3.638>
+>
+                /* ---------------- Row 3 (Thumb cluster) ---------------- */>
+                , <&key_physical_attrs  x=3.698  y=3.608  r=0>
+                , <&key_physical_attrs  x=4.775  y=3.767  r=15  rx=5.275  ry=4.267>
+                , <&key_physical_attrs  x=5.772  y=4.206  r=30  rx=6.272  ry=4.706>
+                , <&key_physical_attrs  x=7.772  y=4.206  r=-30 rx=8.272  ry=4.706>
             ;
     };
 };
